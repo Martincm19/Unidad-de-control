@@ -1,0 +1,712 @@
+$comment
+	File created using the following command:
+		vcd file Control_Unit.msim.vcd -direction
+$end
+$date
+	Mon Dec 14 08:41:20 2020
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module Control_Unit_vlg_vec_tst $end
+$var reg 4 ! CCR_Result [3:0] $end
+$var reg 1 " Clock $end
+$var reg 8 # IR [7:0] $end
+$var reg 1 $ Reset $end
+$var wire 1 % A_Load $end
+$var wire 1 & ALU_Sel [2] $end
+$var wire 1 ' ALU_Sel [1] $end
+$var wire 1 ( ALU_Sel [0] $end
+$var wire 1 ) B_Load $end
+$var wire 1 * Bus1_Sel [1] $end
+$var wire 1 + Bus1_Sel [0] $end
+$var wire 1 , Bus2_Sel [1] $end
+$var wire 1 - Bus2_Sel [0] $end
+$var wire 1 . CCR_Load $end
+$var wire 1 / IR_Load $end
+$var wire 1 0 MAR_Load $end
+$var wire 1 1 PC_Inc $end
+$var wire 1 2 PC_Load $end
+$var wire 1 3 writen $end
+$var wire 1 4 sampler $end
+$scope module i1 $end
+$var wire 1 5 gnd $end
+$var wire 1 6 vcc $end
+$var wire 1 7 unknown $end
+$var tri1 1 8 devclrn $end
+$var tri1 1 9 devpor $end
+$var tri1 1 : devoe $end
+$var wire 1 ; CCR_Result[0]~input_o $end
+$var wire 1 < CCR_Result[1]~input_o $end
+$var wire 1 = CCR_Result[3]~input_o $end
+$var wire 1 > CCR_Result[2]~input_o $end
+$var wire 1 ? ALU_Sel[0]~output_o $end
+$var wire 1 @ ALU_Sel[1]~output_o $end
+$var wire 1 A ALU_Sel[2]~output_o $end
+$var wire 1 B Bus1_Sel[0]~output_o $end
+$var wire 1 C Bus1_Sel[1]~output_o $end
+$var wire 1 D Bus2_Sel[0]~output_o $end
+$var wire 1 E Bus2_Sel[1]~output_o $end
+$var wire 1 F IR_Load~output_o $end
+$var wire 1 G MAR_Load~output_o $end
+$var wire 1 H PC_Load~output_o $end
+$var wire 1 I PC_Inc~output_o $end
+$var wire 1 J A_Load~output_o $end
+$var wire 1 K B_Load~output_o $end
+$var wire 1 L CCR_Load~output_o $end
+$var wire 1 M writen~output_o $end
+$var wire 1 N Clock~input_o $end
+$var wire 1 O Clock~inputclkctrl_outclk $end
+$var wire 1 P IR[3]~input_o $end
+$var wire 1 Q IR[7]~input_o $end
+$var wire 1 R IR[4]~input_o $end
+$var wire 1 S IR[2]~input_o $end
+$var wire 1 T IR[1]~input_o $end
+$var wire 1 U IR[6]~input_o $end
+$var wire 1 V IR[5]~input_o $end
+$var wire 1 W next_state~1_combout $end
+$var wire 1 X IR[0]~input_o $end
+$var wire 1 Y next_state~2_combout $end
+$var wire 1 Z next_state~0_combout $end
+$var wire 1 [ next_state~3_combout $end
+$var wire 1 \ comb~0_combout $end
+$var wire 1 ] next_state.S_FETCH_1_922~combout $end
+$var wire 1 ^ Reset~input_o $end
+$var wire 1 _ Reset~inputclkctrl_outclk $end
+$var wire 1 ` current_state.S_FETCH_1~q $end
+$var wire 1 a comb~1_combout $end
+$var wire 1 b next_state.S_FETCH_2_913~combout $end
+$var wire 1 c current_state.S_FETCH_2~q $end
+$var wire 1 d comb~2_combout $end
+$var wire 1 e next_state.S_DECODE_3_904~combout $end
+$var wire 1 f current_state.S_DECODE_3~q $end
+$var wire 1 g next_state.S_ADD_AB_4~1_combout $end
+$var wire 1 h next_state.S_FETCH_0_930~combout $end
+$var wire 1 i current_state.S_FETCH_0~0_combout $end
+$var wire 1 j current_state.S_FETCH_0~q $end
+$var wire 1 k WideNor0~0_combout $end
+$var wire 1 l WideNor0~0clkctrl_outclk $end
+$var wire 1 m Bus2_Sel[0]$latch~combout $end
+$var wire 1 n PC_Inc$latch~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 !
+0"
+b10000110 #
+1$
+0%
+0(
+0'
+0&
+0)
+0+
+0*
+1-
+0,
+0.
+0/
+10
+01
+02
+03
+x4
+05
+16
+x7
+18
+19
+1:
+1;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+1D
+0E
+0F
+1G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+1Q
+0R
+1S
+1T
+0U
+0V
+1W
+0X
+1Y
+0Z
+1[
+0\
+1]
+1^
+1_
+0`
+1a
+0b
+0c
+1d
+0e
+0f
+1g
+0h
+1i
+0j
+0k
+0l
+1m
+0n
+$end
+#10000
+1"
+1N
+1O
+04
+1`
+1j
+0a
+1\
+1n
+0m
+1b
+0]
+1I
+0G
+0D
+11
+00
+0-
+#20000
+0"
+0N
+0O
+14
+#30000
+1"
+1N
+1O
+04
+0`
+1c
+1k
+0d
+1a
+1l
+0n
+1m
+1e
+0b
+0I
+1G
+1D
+01
+10
+1-
+#40000
+0"
+0N
+0O
+14
+#50000
+1"
+1N
+1O
+04
+1f
+0c
+1d
+0g
+0e
+#60000
+0"
+0N
+0O
+14
+#70000
+1"
+1N
+1O
+04
+0f
+0d
+0a
+0\
+#80000
+0"
+0N
+0O
+14
+#90000
+1"
+1N
+1O
+04
+#100000
+0"
+0N
+0O
+14
+#110000
+1"
+1N
+1O
+04
+#120000
+0"
+0N
+0O
+14
+#130000
+1"
+1N
+1O
+04
+#140000
+0"
+0N
+0O
+14
+#150000
+1"
+1N
+1O
+04
+#160000
+0"
+0N
+0O
+14
+#170000
+1"
+1N
+1O
+04
+#180000
+0"
+0N
+0O
+14
+#190000
+1"
+1N
+1O
+04
+#200000
+0"
+0N
+0O
+14
+#210000
+1"
+1N
+1O
+04
+#220000
+0"
+0N
+0O
+14
+#230000
+1"
+1N
+1O
+04
+#240000
+0"
+0N
+0O
+14
+#250000
+1"
+1N
+1O
+04
+#260000
+0"
+0N
+0O
+14
+#270000
+1"
+1N
+1O
+04
+#280000
+0"
+0N
+0O
+14
+#290000
+1"
+1N
+1O
+04
+#300000
+0"
+0N
+0O
+14
+#310000
+1"
+1N
+1O
+04
+#320000
+0"
+0N
+0O
+14
+#330000
+1"
+1N
+1O
+04
+#340000
+0"
+0N
+0O
+14
+#350000
+1"
+1N
+1O
+04
+#360000
+0"
+0N
+0O
+14
+#370000
+1"
+1N
+1O
+04
+#380000
+0"
+0N
+0O
+14
+#390000
+1"
+1N
+1O
+04
+#400000
+0"
+0N
+0O
+14
+#410000
+1"
+1N
+1O
+04
+#420000
+0"
+0N
+0O
+14
+#430000
+1"
+1N
+1O
+04
+#440000
+0"
+0N
+0O
+14
+#450000
+1"
+1N
+1O
+04
+#460000
+0"
+0N
+0O
+14
+#470000
+1"
+1N
+1O
+04
+#480000
+0"
+0N
+0O
+14
+#490000
+1"
+1N
+1O
+04
+#500000
+0"
+0N
+0O
+14
+#510000
+1"
+1N
+1O
+04
+#520000
+0"
+0N
+0O
+14
+#530000
+1"
+1N
+1O
+04
+#540000
+0"
+0N
+0O
+14
+#550000
+1"
+1N
+1O
+04
+#560000
+0"
+0N
+0O
+14
+#570000
+1"
+1N
+1O
+04
+#580000
+0"
+0N
+0O
+14
+#590000
+1"
+1N
+1O
+04
+#600000
+0"
+0N
+0O
+14
+#610000
+1"
+1N
+1O
+04
+#620000
+0"
+0N
+0O
+14
+#630000
+1"
+1N
+1O
+04
+#640000
+0"
+0N
+0O
+14
+#650000
+1"
+1N
+1O
+04
+#660000
+0"
+0N
+0O
+14
+#670000
+1"
+1N
+1O
+04
+#680000
+0"
+0N
+0O
+14
+#690000
+1"
+1N
+1O
+04
+#700000
+0"
+0N
+0O
+14
+#710000
+1"
+1N
+1O
+04
+#720000
+0"
+0N
+0O
+14
+#730000
+1"
+1N
+1O
+04
+#740000
+0"
+0N
+0O
+14
+#750000
+1"
+1N
+1O
+04
+#760000
+0"
+0N
+0O
+14
+#770000
+1"
+1N
+1O
+04
+#780000
+0"
+0N
+0O
+14
+#790000
+1"
+1N
+1O
+04
+#800000
+0"
+0N
+0O
+14
+#810000
+1"
+1N
+1O
+04
+#820000
+0"
+0N
+0O
+14
+#830000
+1"
+1N
+1O
+04
+#840000
+0"
+0N
+0O
+14
+#850000
+1"
+1N
+1O
+04
+#860000
+0"
+0N
+0O
+14
+#870000
+1"
+1N
+1O
+04
+#880000
+0"
+0N
+0O
+14
+#890000
+1"
+1N
+1O
+04
+#900000
+0"
+0N
+0O
+14
+#910000
+1"
+1N
+1O
+04
+#920000
+0"
+0N
+0O
+14
+#930000
+1"
+1N
+1O
+04
+#940000
+0"
+0N
+0O
+14
+#950000
+1"
+1N
+1O
+04
+#960000
+0"
+0N
+0O
+14
+#970000
+1"
+1N
+1O
+04
+#980000
+0"
+0N
+0O
+14
+#990000
+1"
+1N
+1O
+04
+#1000000
